@@ -1,0 +1,8 @@
+.idea
+*.pyc
+*.sqlite
+
+.misc/
+.env
+
+settings_local.py
