@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="{{ STATIC_URL }}styles.css" rel="stylesheet">
+      <script src="{{ STATIC_URL }}libs/jquery.js"></script>
+
+      <link href="{{ STATIC_URL }}libs/coin-slider/coin-slider-styles.css" rel="stylesheet">
+      <script src="{{ STATIC_URL }}libs/coin-slider/coin-slider.min.js"></script>
+
+
+      <script src="{{ STATIC_URL }}libs/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        $(function(){
+          $("#coin-slider").coinslider({ width: '900px', delay: 2000, effect: 'swirl' });
+        });
+    </script>
+    <style>
+        #coin-slider{width: 100%;}
+        #coin-slider img {width: 900px;}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Static navbar -->
+      <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">House boats</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rent <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">House boats</a></li>
+                    <li><a href="#">Yahts</a></li>
+                    <li><a href="#">$100.000 and under</a></li>
+                    <li><a href="#">$100.000 - $150.000</a></li>
+                    <li><a href="#">$150.000 - $200.000</a></li>
+                    <li><a href="#">$300.000 and above</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Buy <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">House boats</a></li>
+                    <li><a href="#">Yahts</a></li>
+                    <li><a href="#">$100.000 and under</a></li>
+                    <li><a href="#">$100.000 - $150.000</a></li>
+                    <li><a href="#">$150.000 - $200.000</a></li>
+                    <li><a href="#">$300.000 and above</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Ports</a></li>
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                      <input type="text" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" placeholder="Password" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success">Sign in</button>
+                </form>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Navbar example</h1>
+        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <div id="coin-slider">
+            <img src="{{ STATIC_URL }}boats_photos/slideshow_01.jpg">
+            <img src="{{ STATIC_URL }}boats_photos/slideshow_02.jpg">
+            <img src="{{ STATIC_URL }}boats_photos/slideshow_03.jpg">
+            <img src="{{ STATIC_URL }}boats_photos/slideshow_04.jpg">
+            <img src="{{ STATIC_URL }}boats_photos/slideshow_05.jpg">
+            <img src="{{ STATIC_URL }}boats_photos/slideshow_06.jpg">
+            <img src="{{ STATIC_URL }}boats_photos/slideshow_07.jpg">
+        </div>
+      </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    </div> <!-- /container -->
+  </body>
+</html>
