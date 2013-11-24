@@ -1,0 +1,2 @@
+1. Remove coin-slider library if we dont use it finally.
+2. namespace for javascript????? or require.js
